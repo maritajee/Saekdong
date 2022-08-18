@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ImageMarker
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5486439905340460975
+  m_GuidHigh: 2112112322857396157
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5572625385461902232
+      m_GuidHigh: 12816765799046333096
+    m_SerializedTextureGuid:
+      m_GuidLow: 2824964511376411398
+      m_GuidHigh: 9396639683030368857
+    m_Size: {x: 0.10820225, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Magic bird2_jpeg
+    m_Texture: {fileID: 0}
