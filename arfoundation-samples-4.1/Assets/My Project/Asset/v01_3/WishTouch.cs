@@ -13,6 +13,7 @@ public class WishTouch : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
     public GameObject boundary;
+    public GameObject nextbutton;
 
     private int touch_count = 0;
 
@@ -49,6 +50,7 @@ public class WishTouch : MonoBehaviour
         {
             text3.SetActive(false);
             boundary.SetActive(false);
+            nextbutton.SetActive(true);
         }
     }
 
@@ -62,10 +64,6 @@ public class WishTouch : MonoBehaviour
                                             "time", 1f,
                                             "easetype", iTween.EaseType.easeOutBack,
                                             "islocal", true));
-        }
-        else
-        {
-            
         }
     }
 }

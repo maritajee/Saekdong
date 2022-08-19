@@ -127,7 +127,8 @@ public class TouchManager : MonoBehaviour
         {
             iTween.RotateTo(obj, iTween.Hash("rotation", new Vector3(0, 1440, 0),
                                 "time", 2f, 
-                                "easetype", iTween.EaseType.easeOutExpo));
+                                "easetype", iTween.EaseType.easeOutExpo,
+                                "islocal", false));
             rotating = false;
             //Vector3 to = new Vector3(0, obj.transform.rotation.y + 720, 0);
             //if(Vector3.Distance(obj.transform.eulerAngles, to) > 0.01f)
