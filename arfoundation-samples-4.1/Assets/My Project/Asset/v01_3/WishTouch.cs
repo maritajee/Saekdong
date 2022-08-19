@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+[RequireComponent(typeof(ParticleSystem))]
 public class WishTouch : MonoBehaviour
 {
     public GameObject raw_image;
@@ -14,6 +15,8 @@ public class WishTouch : MonoBehaviour
     public GameObject text3;
     public GameObject boundary;
     public GameObject nextbutton;
+
+    public ParticleSystem effect;
 
     private int touch_count = 0;
 
@@ -26,32 +29,7 @@ public class WishTouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(touch_count == 0)
-        {
-            text1.SetActive(true);
-            text2.SetActive(false);
-            text3.SetActive(false);
-            boundary.SetActive(true);
-        }
-
-        else if(touch_count == 1)
-        {
-            text1.SetActive(false);
-            text2.SetActive(true);
-        }
-
-        else if(touch_count == 2)
-        {
-            text2.SetActive(false);
-            text3.SetActive(true);
-        }
-
-        else if(touch_count == 3)
-        {
-            text3.SetActive(false);
-            boundary.SetActive(false);
-            nextbutton.SetActive(true);
-        }
+        TouchCount();
     }
 
     void ImageTouch()
@@ -65,5 +43,42 @@ public class WishTouch : MonoBehaviour
                                             "easetype", iTween.EaseType.easeOutBack,
                                             "islocal", true));
         }
+    }
+
+    void TouchCount()
+    {
+        if (touch_count == 0)
+        {
+            text1.SetActive(true);
+            text2.SetActive(false);
+            text3.SetActive(false);
+            boundary.SetActive(true);
+        }
+
+        else if (touch_count == 1)
+        {
+            text1.SetActive(false);
+            text2.SetActive(true);
+        }
+
+        else if (touch_count == 2)
+        {
+            text2.SetActive(false);
+            text3.SetActive(true);
+        }
+
+        else if (touch_count == 3)
+        {
+            text3.SetActive(false);
+            boundary.SetActive(false);
+            nextbutton.SetActive(true);
+            EffectCtrl();
+        }
+    }
+
+    void EffectCtrl()
+    {
+        effect.gameObject.SetActive(true);
+        effect.Play(true);
     }
 }
