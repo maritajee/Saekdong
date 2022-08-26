@@ -27,4 +27,9 @@ public class v01_2_script : MonoBehaviour
     {
         SceneManager.LoadScene(sceneID);
     }
+
+    public void CamPermission()
+    {
+        Permission.RequestUserPermission("Camera");
+    }
 }

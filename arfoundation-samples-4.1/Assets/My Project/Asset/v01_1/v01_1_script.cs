@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 public class v01_1_script : MonoBehaviour
 {
+
+    public GameObject canvas2;
+    private bool permission_ask = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +21,17 @@ public class v01_1_script : MonoBehaviour
         {
             Application.Quit();
         }
+
     }
 
     public void MoveScene(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
+    }
+
+    public void AskPermission()
+    {
+        NativeCamera.RequestPermission();
+        Permission.RequestUserPermission("ExternalStorageWrite");
     }
 }
