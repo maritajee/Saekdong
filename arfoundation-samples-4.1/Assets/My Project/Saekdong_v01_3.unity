@@ -281,8 +281,7 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 76dec6578e58d8645be3a056e833248b,
     type: 2}
   m_MaxNumberOfMovingImages: 0
-  m_TrackedImagePrefab: {fileID: 2404329306862608198, guid: 05d4bf9a30d653045912729bd5b74576,
-    type: 3}
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &112014051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,8 +308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  canvas01: {fileID: 0}
-  canvas02: {fileID: 0}
+  canvas01: {fileID: 112014049}
+  canvas02: {fileID: 1935113000}
+  targetImgName: MagicBird
+  target3dObj: {fileID: 0}
 --- !u!1 &129473905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6514a1677c1458a49aa137cab137d2d4,
