@@ -15,6 +15,7 @@ public class WishTouch : MonoBehaviour
     public GameObject text3;
     public GameObject boundary;
     public GameObject nextbutton;
+    public GameObject target;
 
     public ParticleSystem effect;
 
@@ -36,13 +37,19 @@ public class WishTouch : MonoBehaviour
     {
         touch_count += 1;
         float temp = 0.15f * touch_count * touch_count + 0.8f;
-        if(touch_count < 4)
+        if (touch_count < 4)
         {
             iTween.ScaleTo(raw_image, iTween.Hash("scale", new Vector3(temp, temp, 1f),
                                             "time", 1f,
                                             "easetype", iTween.EaseType.easeOutBack,
                                             "islocal", true));
+
+            iTween.RotateTo(target, iTween.Hash("rotation", new Vector3(0, 720, 0),
+                                "time", 1f,
+                                "easetype", iTween.EaseType.easeOutExpo,
+                                "islocal", false));
         }
+
     }
 
     void TouchCount()
@@ -80,5 +87,23 @@ public class WishTouch : MonoBehaviour
     {
         effect.gameObject.SetActive(true);
         effect.Play(true);
+    }
+
+    GameObject[] FindTowerObject(int layer)
+    {
+        var goArray = FindObjectsOfType(typeof(GameObject)) as GameObject[];
+        var goList = new System.Collections.Generic.List<GameObject>();
+        for (int i = 0; i < goArray.Length; i++)
+        {
+            if (goArray[i].layer == layer)
+            {
+                goList.Add(goArray[i]);
+            }
+        }
+        if (goList.Count == 0)
+        {
+            return null;
+        }
+        return goList.ToArray();
     }
 }

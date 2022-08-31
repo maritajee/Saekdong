@@ -1811,6 +1811,7 @@ MonoBehaviour:
   text3: {fileID: 1598145539}
   boundary: {fileID: 969935440}
   nextbutton: {fileID: 793372393}
+  target: {fileID: 2090779707}
   effect: {fileID: 752779498}
 --- !u!199 &500211807
 ParticleSystemRenderer:
@@ -7219,6 +7220,7 @@ MonoBehaviour:
   hope: {fileID: 811266205}
   love: {fileID: 649566860}
   boundary: {fileID: 1235709354}
+  towerparent: {fileID: 0}
   Shapes:
   - {fileID: 919132149155446097, guid: d32d0ede4f35d724f83d20ea7e6f7a39, type: 3}
   - {fileID: 919132149155446097, guid: 6bc5d6ba878410d47b75320a920101b9, type: 3}
@@ -9544,6 +9546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngameDebugConsole
       objectReference: {fileID: 0}
+    - target: {fileID: 132536, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -11297,6 +11303,7 @@ MonoBehaviour:
   hope: {fileID: 811266205}
   love: {fileID: 649566860}
   boundary: {fileID: 1235709354}
+  towerparent: {fileID: 2090779707}
   Shapes:
   - {fileID: 919132149155446097, guid: d32d0ede4f35d724f83d20ea7e6f7a39, type: 3}
   - {fileID: 919132149155446097, guid: 6bc5d6ba878410d47b75320a920101b9, type: 3}

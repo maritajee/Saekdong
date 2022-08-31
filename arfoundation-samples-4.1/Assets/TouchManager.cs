@@ -21,6 +21,7 @@ public class TouchManager : MonoBehaviour
     public GameObject hope;
     public GameObject love;
     public GameObject boundary;
+    public GameObject towerparent;
 
     private int clickBool = 0;
     private bool rotating = true;
@@ -80,7 +81,7 @@ public class TouchManager : MonoBehaviour
         }
         temp.AddComponent<BoxCollider>();
         Vector3 position = new Vector3(0f, towerHeight(TowerObjectList), 0f);
-        GameObject tower = Instantiate(temp, position, temp.transform.rotation);
+        GameObject tower = Instantiate(temp, position, temp.transform.rotation, towerparent.transform);
         tower.layer = LayerMask.NameToLayer("Tower");
         foreach (Transform child in tower.transform)
         {
