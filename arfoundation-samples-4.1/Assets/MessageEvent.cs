@@ -6,15 +6,20 @@ using UnityEngine.UI;
 public class MessageEvent : MonoBehaviour
 {
     public InputField messageInput;
-    public string message;
-    public GameObject textDisplay;
-
-    public void StoreMessage()
+  
+    private string message;
+    void Update()
     {
-        if (message.Length > 0 && Input.GetKeyDown(KeyCode.Return))
+        if(messageInput.text.Length > 0)
         {
-            message = messageInput.GetComponent<InputField>().text;
-            textDisplay.GetComponent<Text>().text = message;
+            Debug.Log(messageInput.text);
         }
     }
+    public string StoreMessage(Text input)
+    {
+        message = input.text;
+        return message;
+    }
+
+    
 }

@@ -182,7 +182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &112014046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -757,7 +757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &286664931
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1705,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &500211802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7540,6 +7540,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 793372395}
+        m_TargetAssemblyTypeName: v01_2_script, Assembly-CSharp
+        m_MethodName: KeepObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &793372397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7591,6 +7603,7 @@ GameObject:
   - component: {fileID: 798152458}
   - component: {fileID: 798152457}
   - component: {fileID: 798152456}
+  - component: {fileID: 798152460}
   m_Layer: 5
   m_Name: nextButton
   m_TagString: Untagged
@@ -7686,6 +7699,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 798152460}
+        m_TargetAssemblyTypeName: KeepObject, Assembly-CSharp
+        m_MethodName: addObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2090779707}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 798152460}
+        m_TargetAssemblyTypeName: KeepObject, Assembly-CSharp
+        m_MethodName: addObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1719312079}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &798152458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7724,6 +7761,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798152454}
   m_CullTransparentMesh: 1
+--- !u!114 &798152460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798152454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f40d434fa77d6874a875e643e335443f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &811266205
 GameObject:
   m_ObjectHideFlags: 0
@@ -11083,7 +11132,7 @@ GameObject:
   - component: {fileID: 1719312082}
   - component: {fileID: 1719312081}
   - component: {fileID: 1719312080}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tower Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
