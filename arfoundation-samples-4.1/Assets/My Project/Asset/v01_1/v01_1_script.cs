@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 public class v01_1_script : MonoBehaviour
@@ -32,6 +31,6 @@ public class v01_1_script : MonoBehaviour
     public void AskPermission()
     {
         NativeCamera.RequestPermission();
-        Permission.RequestUserPermission("ExternalStorageWrite");
+        NativeGallery.RequestPermission(NativeGallery.PermissionType.Write);
     }
 }

@@ -8,11 +8,6 @@ using UnityEngine.Android;
 
 public class v01_2_script : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -30,6 +25,37 @@ public class v01_2_script : MonoBehaviour
 
     public void CamPermission()
     {
-        Permission.RequestUserPermission("Camera");
+        
+        NativeCamera.Permission permissionChecker = new NativeCamera.Permission();
+        permissionChecker = NativeCamera.CheckPermission();
+
+        switch (permissionChecker)
+        {
+            case NativeCamera.Permission.Denied:
+                NativeGallery.OpenSettings();
+                break;
+
+            case NativeCamera.Permission.Granted:
+                break;
+
+            case NativeCamera.Permission.ShouldAsk:
+                NativeCamera.RequestPermission();
+                break;
+        }
+
+        
+    }
+
+    public void OnDestroy()
+    {
+        if(GameObject.Find("DontDestroyOnLoad"))
+        {
+            Debug.Log("Find");
+        }
+        else
+        {
+            Debug.Log("cannot Find");
+        }
+        Destroy(GameObject.Find("DontDestroyOnLoad"));
     }
 }
