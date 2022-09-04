@@ -8,8 +8,13 @@ public class PaperCapture : MonoBehaviour
 {
     public RenderTexture r_texture;
     public Canvas ErrPopup;
-    private Texture2D tex;
-    
+
+
+    public void Awake()
+    {
+        StartCoroutine(WaitRead());
+    }
+
     public void StoragePermissionCheck()
     {
         NativeGallery.Permission permissionChecker = new NativeGallery.Permission();
@@ -36,14 +41,11 @@ public class PaperCapture : MonoBehaviour
     
     public void ShareTexture()
     {
-        
-        Texture2D ss = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-        ss.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
-        ss.Apply();
+        Texture2D tex2d = toTexture2D(r_texture);
         string filePath = Path.Combine(Application.temporaryCachePath, "shared img.png");
-        File.WriteAllBytes(filePath, ss.EncodeToPNG());
+        File.WriteAllBytes(filePath, tex2d.EncodeToPNG());
         // To avoid memory leaks
-        Destroy(ss);
+        Destroy(tex2d);
         new NativeShare().AddFile(filePath).SetSubject("Subject goes here").
             SetCallback((result, shareTarget) => Debug.Log("Share result: " + result + ", selected app: " + shareTarget))
             .Share();
@@ -70,5 +72,10 @@ public class PaperCapture : MonoBehaviour
         tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
         tex.Apply();
         return tex;
+    }
+
+    IEnumerator WaitRead()
+    {
+        yield return new WaitForEndOfFrame();
     }
 }
