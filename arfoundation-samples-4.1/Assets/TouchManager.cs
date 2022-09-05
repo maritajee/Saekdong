@@ -6,11 +6,14 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class TouchManager : MonoBehaviour
 {
     Ray ray;
     RaycastHit hit;
     [SerializeField] private Camera arCamera;
+
 
     public Canvas canvas;
     public GameObject towerbase;
@@ -27,7 +30,9 @@ public class TouchManager : MonoBehaviour
     private bool rotating = true;
 
     public List<GameObject> Shapes = new List<GameObject>();
+    public List<AudioClip> SFX = new List<AudioClip>();
     private List<GameObject> TowerObjectList = new List<GameObject>();
+
 
     void Start()
     {
@@ -52,6 +57,7 @@ public class TouchManager : MonoBehaviour
                     {
                         objectSelect(hit.transform.gameObject);
                         objectRotation(hit.transform.gameObject);
+                        objectSound(hit.transform.gameObject);
                     }
                     
                 }
@@ -141,6 +147,19 @@ public class TouchManager : MonoBehaviour
             //    obj.transform.eulerAngles = to;
             //    rotating = false;
             //}
+        }
+    }
+
+    private void objectSound(GameObject obj)
+    {
+        for (int i = 0; i < SFX.Count; i++)
+        {
+            if (SFX[i].name == obj.name)
+            {
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.clip = SFX[i];
+                audio.Play();
+            }
         }
     }
 

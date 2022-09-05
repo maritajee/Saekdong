@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/My Project/Saekdong_v01_1.unity
     guid: 9d70a6cc0a9895c43b2922b9ea6fa1e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/My Project/Saekdong_v01_2.unity
     guid: 12fd73df5ed87d64fb1251dad48f2634
   - enabled: 1
     path: Assets/My Project/Saekdong_v01_3.unity
     guid: 00d69d4f5c3674b4da958ca2987b0760
-  - enabled: 1
+  - enabled: 0
     path: Assets/My Project/Saekdong_v01_4.unity
     guid: 9899f0d551f4e4742b5953afee7c4458
   m_configObjects:
