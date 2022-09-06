@@ -62,6 +62,8 @@ public class PaperCapture : MonoBehaviour
         //save temp image for share
         string filePath = System.IO.Path.Combine(Application.temporaryCachePath, "shared img.png");
         File.WriteAllBytes(filePath, tex2d.EncodeToPNG());
+        NativeGallery.SaveImageToGallery(tex2d, "Saekdong",
+            "Screenshot_" + System.DateTime.Now.ToString("dd-MM-yyyy-HH-mm-ss") + "{0}.png");
         // To avoid memory leaks
         Destroy(tex2d);
     }
