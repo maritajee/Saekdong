@@ -57,9 +57,16 @@ public class TouchManager : MonoBehaviour
                 {
                     if(TowerObjectList.Count<4)
                     {
-                        objectSelect(hit.transform.gameObject);
-                        objectRotation(hit.transform.gameObject);
-                        objectSound(hit.transform.gameObject);
+                        if(hit.transform.gameObject.name == "Base")
+                        {
+
+                        }
+                        else
+                        {
+                            objectSelect(hit.transform.gameObject);
+                            objectRotation(hit.transform.gameObject);
+                            objectSound(hit.transform.gameObject);
+                        }
                     }
                     
                 }

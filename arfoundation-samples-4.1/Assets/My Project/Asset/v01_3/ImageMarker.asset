@@ -25,3 +25,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: MagicBird
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5285259217412704383
+      m_GuidHigh: 13921298336390203559
+    m_SerializedTextureGuid:
+      m_GuidLow: 1996491313368458465
+      m_GuidHigh: 6358999515969972457
+    m_Size: {x: 0.10820225, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: MagicBird1
+    m_Texture: {fileID: 0}

@@ -37,7 +37,7 @@ public class WishTouch : MonoBehaviour
     void ImageTouch()
     {
         touch_count += 1;
-        float temp = 0.15f * touch_count * touch_count + 0.8f;
+        float temp = 1.3f * (0.15f * touch_count * touch_count)+1.0f;
         if (touch_count < 4)
         {
             iTween.ScaleTo(raw_image, iTween.Hash("scale", new Vector3(temp, temp, 1f),
@@ -53,7 +53,7 @@ public class WishTouch : MonoBehaviour
 
     }
 
-    void TouchCount()
+    public void TouchCount()
     {
         var main = effect.main;
         if (touch_count == 0)
@@ -69,7 +69,7 @@ public class WishTouch : MonoBehaviour
             text1.SetActive(false);
             text2.SetActive(true);
             
-            main.maxParticles = 100;
+            main.maxParticles = 30;
             EffectCtrl();
         }
 
@@ -77,7 +77,7 @@ public class WishTouch : MonoBehaviour
         {
             text2.SetActive(false);
             text3.SetActive(true);
-            main.maxParticles = 200;
+            main.maxParticles = 120;
             EffectCtrl();
         }
 
@@ -90,6 +90,7 @@ public class WishTouch : MonoBehaviour
             EffectCtrl();
         }
     }
+
 
     void EffectCtrl()
     {
