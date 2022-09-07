@@ -4343,6 +4343,7 @@ GameObject:
   - component: {fileID: 2137888717}
   - component: {fileID: 2137888716}
   - component: {fileID: 2137888719}
+  - component: {fileID: 2137888720}
   m_Layer: 5
   m_Name: New
   m_TagString: Untagged
@@ -4416,8 +4417,20 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2137888719}
         m_TargetAssemblyTypeName: v01_2_script, Assembly-CSharp
-        m_MethodName: MoveScene
-        m_Mode: 3
+        m_MethodName: OnDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2137888720}
+        m_TargetAssemblyTypeName: RestartApp, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4428,8 +4441,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2137888719}
         m_TargetAssemblyTypeName: v01_2_script, Assembly-CSharp
-        m_MethodName: OnDestroy
-        m_Mode: 1
+        m_MethodName: MoveScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4486,5 +4499,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 174f65317188b014ea08d461236f398e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2137888720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137888714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d493c2ee03db3447b0d07912e85823c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

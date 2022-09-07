@@ -32,7 +32,15 @@ public class v01_2_script : MonoBehaviour
         switch (permissionChecker)
         {
             case NativeCamera.Permission.Denied:
-                NativeGallery.OpenSettings();
+                if(Application.platform == RuntimePlatform.IPhonePlayer)
+                {
+                    NativeCamera.OpenSettings();
+                }
+                else
+                {
+                    NativeCamera.RequestPermission();
+                }
+                
                 break;
 
             case NativeCamera.Permission.Granted:

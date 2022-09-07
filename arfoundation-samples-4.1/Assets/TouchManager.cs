@@ -32,10 +32,12 @@ public class TouchManager : MonoBehaviour
     public List<GameObject> Shapes = new List<GameObject>();
     public List<AudioClip> SFX = new List<AudioClip>();
     private List<GameObject> TowerObjectList = new List<GameObject>();
+    //public static List<GameObject> KeepedObjects = new List<GameObject>();
 
 
     void Start()
     {
+        
         TowerObjectList.Add(towerbase);
         delButton.onClick.AddListener(DelButtonAction);
     }
@@ -95,6 +97,7 @@ public class TouchManager : MonoBehaviour
         }
         tower.name = TowerObjectList.Count.ToString();
         TowerObjectList.Add(tower);
+        //KeepedObjects.Add(tower);
 
         rotating = true;
     }

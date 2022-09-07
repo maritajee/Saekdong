@@ -15,6 +15,8 @@ public class MarkerDetection : MonoBehaviour
     ARTrackedImageManager arTrackImageManager;
     Dictionary<string, GameObject> _prefabDic = new Dictionary<string, GameObject>();
 
+    
+
     private bool imagedetected = false;
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,7 @@ public class MarkerDetection : MonoBehaviour
 
     void ImageStateChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        foreach (ARTrackedImage trackedImage in eventArgs.added)
+        foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
             Debug.Log("image tracking add!!" + trackedImage.name);
             imagedetected = true;

@@ -7,6 +7,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ParticleSystem))]
+
 public class WishTouch : MonoBehaviour
 {
     public GameObject raw_image;
@@ -54,6 +55,7 @@ public class WishTouch : MonoBehaviour
 
     void TouchCount()
     {
+        var main = effect.main;
         if (touch_count == 0)
         {
             text1.SetActive(true);
@@ -66,12 +68,17 @@ public class WishTouch : MonoBehaviour
         {
             text1.SetActive(false);
             text2.SetActive(true);
+            
+            main.maxParticles = 100;
+            EffectCtrl();
         }
 
         else if (touch_count == 2)
         {
             text2.SetActive(false);
             text3.SetActive(true);
+            main.maxParticles = 200;
+            EffectCtrl();
         }
 
         else if (touch_count == 3)
@@ -79,6 +86,7 @@ public class WishTouch : MonoBehaviour
             text3.SetActive(false);
             boundary.SetActive(false);
             nextbutton.SetActive(true);
+            main.maxParticles = 500;
             EffectCtrl();
         }
     }

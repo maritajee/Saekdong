@@ -24,7 +24,14 @@ public class PaperCapture : MonoBehaviour
         {
             case NativeGallery.Permission.Denied:
                 ErrPopup.gameObject.SetActive(true);
-                NativeGallery.OpenSettings();
+                if (Application.platform == RuntimePlatform.IPhonePlayer)
+                {
+                    NativeGallery.OpenSettings();
+                }
+                else
+                {
+                    NativeGallery.RequestPermission(NativeGallery.PermissionType.Write);
+                }
                 break;
 
             case NativeGallery.Permission.Granted:
@@ -80,4 +87,6 @@ public class PaperCapture : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
     }
+
+    
 }

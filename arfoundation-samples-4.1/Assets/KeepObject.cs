@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class KeepObject : MonoBehaviour
 {
+    public static List<GameObject> KeepedObject = new List<GameObject>();
     private List<GameObject> gameObjects = new List<GameObject>();
     GameObject[] FindGameObjectsWithLayer(int layer)
     {
@@ -33,8 +34,8 @@ public class KeepObject : MonoBehaviour
     {  
         for (int i = 0; i < gameObjects.Count; i++)
         {
-
             DontDestroyOnLoad(gameObjects[i]);
+            KeepedObject.Add(gameObjects[i]);
         }
     }
 
@@ -42,7 +43,7 @@ public class KeepObject : MonoBehaviour
     {
         Debug.Log(temp.GetType());
         gameObjects.Add(temp);
-
+        
         keepObject();
     }
 
