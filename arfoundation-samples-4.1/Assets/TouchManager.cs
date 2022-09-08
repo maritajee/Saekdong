@@ -37,9 +37,10 @@ public class TouchManager : MonoBehaviour
 
     void Start()
     {
-        
         TowerObjectList.Add(towerbase);
         delButton.onClick.AddListener(DelButtonAction);
+
+
     }
 
     void Update()
