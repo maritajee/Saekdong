@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/My Project/Saekdong_v01_4.unity
     guid: 9899f0d551f4e4742b5953afee7c4458
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_5.unity
+    guid: d90e4264ab9516946bd1302fa3be14ae
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}

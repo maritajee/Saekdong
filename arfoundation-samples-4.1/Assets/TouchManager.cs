@@ -96,7 +96,7 @@ public class TouchManager : MonoBehaviour
             }
         }
         temp.AddComponent<BoxCollider>();
-        Vector3 position = new Vector3(0f, towerHeight(TowerObjectList), 0f);
+        Vector3 position = new Vector3(0f, towerHeight(TowerObjectList), 15f);
         GameObject tower = Instantiate(temp, position, temp.transform.rotation, towerparent.transform);
         tower.layer = LayerMask.NameToLayer("Tower");
         foreach (Transform child in tower.transform)
@@ -113,7 +113,7 @@ public class TouchManager : MonoBehaviour
     private float towerHeight(List<GameObject> list)
     {
         
-        float height = 0f;
+        float height = -4f;
         height += towerbase.GetComponent<BoxCollider>().size.z;
         if(list.Count == 1)
         {
