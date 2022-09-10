@@ -54,16 +54,5 @@ public class v01_2_script : MonoBehaviour
         
     }
 
-    public void OnDestroy()
-    {
-        if(GameObject.Find("DontDestroyOnLoad"))
-        {
-            Debug.Log("Find");
-        }
-        else
-        {
-            Debug.Log("cannot Find");
-        }
-        Destroy(GameObject.Find("DontDestroyOnLoad"));
-    }
+    
 }

@@ -31,7 +31,7 @@ public class TouchManager : MonoBehaviour
 
     public List<GameObject> Shapes = new List<GameObject>();
     public List<AudioClip> SFX = new List<AudioClip>();
-    private List<GameObject> TowerObjectList = new List<GameObject>();
+    public static List<GameObject> TowerObjectList = new List<GameObject>();
     //public static List<GameObject> KeepedObjects = new List<GameObject>();
 
 
