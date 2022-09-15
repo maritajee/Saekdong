@@ -37,7 +37,7 @@ public class WishTouch : MonoBehaviour
     void ImageTouch()
     {
         touch_count += 1;
-        float temp = 1.3f * (0.15f * touch_count * touch_count)+1.0f;
+        float temp = 0.067f * touch_count * touch_count + 0.133f * touch_count + 1.15f;
         if (touch_count < 4)
         {
             iTween.ScaleTo(raw_image, iTween.Hash("scale", new Vector3(temp, temp, 1f),
