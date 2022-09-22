@@ -44,12 +44,21 @@ public class WishTouch : MonoBehaviour
                                             "time", 1f,
                                             "easetype", iTween.EaseType.easeOutBack,
                                             "islocal", true));
-            if(touch_count < 3)
+            if(touch_count < 4)
             {
                 iTween.RotateTo(target, iTween.Hash("rotation", new Vector3(0, 720, 0),
                                                 "time", 1f,
                                                 "easetype", iTween.EaseType.easeOutExpo,
                                                 "islocal", false));
+            }
+            if (touch_count == 3)
+            {
+                StartCoroutine(wait(1.5f));
+                iTween.RotateBy(target, iTween.Hash("y", 1,
+                                                "time", 4f,
+                                                "looptype", iTween.LoopType.loop,
+                                                "easetype", iTween.EaseType.linear,
+                                                "islocal", true));
             }
         }
     }
@@ -90,11 +99,7 @@ public class WishTouch : MonoBehaviour
             main.maxParticles = 500;
             EffectCtrl();
 
-            iTween.RotateBy(target, iTween.Hash("y", 1,
-                                                "time", 4f,
-                                                "looptype", iTween.LoopType.loop,
-                                                "easetype", iTween.EaseType.linear,
-                                                "islocal", false));
+            
         }
     }
 
@@ -121,5 +126,10 @@ public class WishTouch : MonoBehaviour
             return null;
         }
         return goList.ToArray();
+    }
+
+    IEnumerator wait(float sec)
+    {
+        yield return new WaitForSeconds(sec);
     }
 }

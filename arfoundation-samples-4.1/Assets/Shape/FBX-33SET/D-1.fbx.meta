@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: f1c1ef7c4a7947a42b3aedd488a26ecd
+guid: e330b15b001b19e44b85dec422c4a27f
 ModelImporter:
-  serializedVersion: 20300
+  serializedVersion: 20200
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: B-7
-    second: {fileID: 2100000, guid: 55fc5436f5b27e34b9c657871c8d8600, type: 2}
+      name: D-1
+    second: {fileID: 2100000, guid: 85244b591d6bc88428c1e08461a87773, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -39,7 +39,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.2
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -90,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.012
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
@@ -101,7 +101,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

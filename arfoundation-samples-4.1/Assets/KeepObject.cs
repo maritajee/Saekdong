@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+
 public class KeepObject : MonoBehaviour
 {
     public static List<GameObject> KeepedObject = new List<GameObject>();
     private List<GameObject> gameObjects = new List<GameObject>();
+    public GameObject tower;
     GameObject[] FindGameObjectsWithLayer(int layer)
     {
         GameObject[] goArray = FindObjectsOfType(typeof(GameObject)) as GameObject[];
@@ -37,6 +40,11 @@ public class KeepObject : MonoBehaviour
             DontDestroyOnLoad(gameObjects[i]);
             KeepedObject.Add(gameObjects[i]);
         }
+        iTween.Stop(tower);
+        Vector3 temp = transform.rotation.eulerAngles;
+        temp.y = 0f;
+        tower.transform.rotation = Quaternion.Euler(temp);
+
     }
 
     public void addObject(GameObject temp)
