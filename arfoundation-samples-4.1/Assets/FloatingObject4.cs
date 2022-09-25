@@ -14,7 +14,7 @@ public class FloatingObject4 : MonoBehaviour
         foreach(Transform child in A.transform)
         {
             iTween.RotateBy(child.gameObject, iTween.Hash("z", 1,
-                                                "time", 90f,
+                                                "time", 30f,
                                                 "looptype", iTween.LoopType.loop,
                                                 "easetype", iTween.EaseType.linear,
                                                 "islocal", false));

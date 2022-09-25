@@ -32,6 +32,11 @@ public class KeepObject : MonoBehaviour
         return goList.ToArray();
 
     }
+    public void addSingleObject(GameObject temp)
+    {
+        DontDestroyOnLoad(temp);
+        KeepedObject.Add(temp);
+    }
 
     public void keepObject()
     {  

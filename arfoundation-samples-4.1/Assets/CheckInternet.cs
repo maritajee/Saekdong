@@ -17,8 +17,7 @@ public class CheckInternet : MonoBehaviour
         else
         {
             Debug.Log("Internet Connected");
-            SendData(TouchManager.TowerObjectList);
-            MoveScene(3);
+            //SendData(TouchManager.TowerObjectList);
         }
     }
     public void MoveScene(int sceneID)
@@ -26,11 +25,11 @@ public class CheckInternet : MonoBehaviour
         SceneManager.LoadScene(sceneID);
     }
 
-    public void SendData(List<GameObject> list)
-    {
-        for (int i = 1; i < list.Count; i++)
-        {
-            Debug.Log(list[i].transform.GetChild(0).name);
-        }
-    }
+    //public void SendData(List<GameObject> list)
+    //{
+    //    for (int i = 1; i < list.Count; i++)
+    //    {
+    //        Debug.Log(list[i].transform.GetChild(0).name);
+    //    }
+    //}
 }
