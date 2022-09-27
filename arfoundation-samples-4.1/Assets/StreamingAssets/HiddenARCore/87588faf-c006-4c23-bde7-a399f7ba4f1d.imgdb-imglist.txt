@@ -1,0 +1,3 @@
+56c7eb98f1434d55a842888d964cdeb1|C:\Users\POPO\Desktop\arfoundation-samples-4.1\Saekdong\arfoundation-samples-4.1\Assets\My Project\Asset\v01_3\Magic bird2_jpeg.jpeg|0.00541011
+77be487f03414959a748c628146332c1|C:\Users\POPO\Desktop\arfoundation-samples-4.1\Saekdong\arfoundation-samples-4.1\Assets\My Project\Asset\v01_3\Magic bird3.jpg|0.00541011
+fc90ef49a85f426bb4c14d3e8d839239|C:\Users\POPO\Desktop\arfoundation-samples-4.1\Saekdong\arfoundation-samples-4.1\Assets\My Project\Asset\v01_3\magicbird3_1.png

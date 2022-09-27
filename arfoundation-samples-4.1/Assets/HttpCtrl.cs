@@ -34,14 +34,14 @@ public class HttpCtrl : MonoBehaviour
         float height = -15f;
         for (int i = 0; i < towerObjects.Count; i++)
         {
-            Instantiate(towerObjects[i], new Vector3(0f, height, 10f), towerObjects[i].transform.rotation);
+            Instantiate(towerObjects[i], new Vector3(0f, height, 15f), towerObjects[i].transform.rotation);
             height += towerObjects[i].transform.GetChild(1).gameObject.transform.localPosition.z;
         }
     }
     public void GetObject()
     {
         Debug.Log("Sticks.Items.Length: " + sticks.Items.Length);
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 5; i++)
         {
             GameObject temp1 = null;
             GameObject temp2 = null;
@@ -49,15 +49,15 @@ public class HttpCtrl : MonoBehaviour
             
             for (int j = 0; j < Shapes.Count; j++)
             {
-                if (Shapes[j].name == sticks.Items[sticks.Items.Length - 7 + i].object1 + "_Onstick")
+                if (Shapes[j].name == sticks.Items[sticks.Items.Length - 5 + i].object1 + "_Onstick")
                 {
                     temp1 = Shapes[j];
                 }
-                if (Shapes[j].name == sticks.Items[sticks.Items.Length - 7 + i].object2 + "_Onstick")
+                if (Shapes[j].name == sticks.Items[sticks.Items.Length - 5 + i].object2 + "_Onstick")
                 {
                     temp2 = Shapes[j];
                 }
-                if (Shapes[j].name == sticks.Items[sticks.Items.Length - 7 + i].object3 + "_Onstick")
+                if (Shapes[j].name == sticks.Items[sticks.Items.Length - 5 + i].object3 + "_Onstick")
                 {
                     temp3 = Shapes[j];
                 }
