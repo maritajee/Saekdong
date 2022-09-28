@@ -22,7 +22,7 @@ There are two ways to set up the plugin on iOS:
 2.2.b. Manual Setup for iOS
 - set the value of 'Automated Setup' to false at 'Project Settings/yasirkula/Native Camera'
 - build your project
-- enter a Camera Usage Description to Info.plist in Xcode
+- enter a ge Description to Info.plist in Xcode
 - insert "-framework MobileCoreServices -framework ImageIO" to the "Other Linker Flags" of Unity-iPhone Target (and UnityFramework Target on Unity 2019.3 or newer)
 
 

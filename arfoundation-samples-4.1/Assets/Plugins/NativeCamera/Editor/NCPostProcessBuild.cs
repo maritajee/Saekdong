@@ -14,8 +14,8 @@ namespace NativeCameraNamespace
 		private const string SAVE_PATH = "ProjectSettings/NativeCamera.json";
 
 		public bool AutomatedSetup = true;
-		public string CameraUsageDescription = "The app requires access to the camera to take pictures or record videos with it.";
-		public string MicrophoneUsageDescription = "The app will capture microphone input in the recorded video.";
+		public string CameraUsageDescription = "Saekdong Magic은 AR 컨텐츠 감상을 위해 카메라 접근을 필요로 합니다.";
+		public string MicrophoneUsageDescription = "Saekdong Magic은 AR 컨텐츠 감상을 위해 카메라 접근을 필요로 합니다.";
 
 		private static Settings m_instance = null;
 		public static Settings Instance

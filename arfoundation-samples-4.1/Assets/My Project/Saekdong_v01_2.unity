@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6371517, g: 0.6371517, b: 0.63501, a: 1}
+  m_IndirectSpecularColor: {r: 0.6378622, g: 0.6380538, b: 0.6353442, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_ContentType: 9
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 0
   m_LineType: 2
   m_HideMobileInput: 1
   m_CharacterValidation: 0

@@ -17,8 +17,8 @@ namespace NativeGalleryNamespace
 #if !UNITY_2018_1_OR_NEWER
 		public bool MinimumiOSTarget8OrAbove = false;
 #endif
-		public string PhotoLibraryUsageDescription = "The app requires access to Photos to interact with it.";
-		public string PhotoLibraryAdditionsUsageDescription = "The app requires access to Photos to save media to it.";
+		public string PhotoLibraryUsageDescription = "Saekdong Magic은 사진 저장을 위해 미디어 접근을 필요로 합니다.";
+		public string PhotoLibraryAdditionsUsageDescription =  "Saekdong Magic은 사진 저장을 위해 미디어 접근을 필요로 합니다.";
 		public bool DontAskLimitedPhotosPermissionAutomaticallyOnIos14 = true; // See: https://mackuba.eu/2020/07/07/photo-library-changes-ios-14/
 
 		private static Settings m_instance = null;
