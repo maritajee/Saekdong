@@ -9,11 +9,11 @@ public class CanvasEffect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(WaitSec(1));
+        StartCoroutine(WaitSec(0.5f));
         
     }
 
-    IEnumerator WaitSec(int sec)
+    IEnumerator WaitSec(float sec)
     {
         yield return new WaitForSeconds(sec);
         next_btn.SetActive(true);

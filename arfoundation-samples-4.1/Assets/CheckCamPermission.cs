@@ -2,50 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-# if PLATFORM_ANDROID
-using UnityEngine.Android;
-# endif
 
-public class v01_2_script : MonoBehaviour
+public class CheckCamPermission : MonoBehaviour
 {
-
-    
-
-    public void MoveScene(int sceneID)
-    {
-        SceneManager.LoadScene(sceneID);
-    }
-
+    public Canvas pre;
+    public Canvas next;
     public void CamPermission()
     {
-        
+
         NativeCamera.Permission permissionChecker = new NativeCamera.Permission();
         permissionChecker = NativeCamera.CheckPermission();
-
+        pre.gameObject.SetActive(false);
         switch (permissionChecker)
         {
             case NativeCamera.Permission.Denied:
-                if(Application.platform == RuntimePlatform.IPhonePlayer)
-                {
-                    NativeCamera.OpenSettings();
-                }
-                else
-                {
-                    NativeCamera.RequestPermission();
-                }
-                
+                next.gameObject.SetActive(true);
                 break;
 
             case NativeCamera.Permission.Granted:
+                SceneManager.LoadScene(2);
                 break;
 
             case NativeCamera.Permission.ShouldAsk:
-                NativeCamera.RequestPermission();
+                next.gameObject.SetActive(true);
                 break;
         }
 
-        
-    }
 
-    
+    }
 }
