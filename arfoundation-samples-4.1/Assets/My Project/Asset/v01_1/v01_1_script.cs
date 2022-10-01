@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class v01_1_script : MonoBehaviour
 {
 
-    public GameObject canvas2;
     private bool permission_ask = false;
     // Start is called before the first frame update
     void Start()

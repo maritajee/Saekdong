@@ -232,7 +232,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD655\uC778"
+  m_Text: OK
 --- !u!222 &24179672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -770,8 +770,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -166.00006}
-  m_SizeDelta: {x: 600, y: 100}
+  m_AnchoredPosition: {x: 0, y: -170.99994}
+  m_SizeDelta: {x: 700, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &201658383
 MonoBehaviour:
@@ -795,10 +795,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b5e843a94af5f744ebd2f05a724d16b2, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBBFF\uC74C\uC774 \uC774\uB044\uB294 \uB3C4\uD615\uC744 \uD130\uCE58\uD558\uC138\uC694."
+  m_Text: Touch the shape that leads to Faith.
 --- !u!222 &201658384
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -842,14 +842,14 @@ RectTransform:
   m_GameObject: {fileID: 224526176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 6.8, y: 2.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2003753177}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -218}
+  m_AnchoredPosition: {x: 0, y: -227}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &224526178
@@ -924,7 +924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -291}
+  m_AnchoredPosition: {x: 0, y: -308}
   m_SizeDelta: {x: 700, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &271244508
@@ -960,10 +960,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\uBBFF\uC74C \uC18C\uB9DD \uC0AC\uB791\uC758 \uC6D0\uC18C\uAC00 \uD750\uB974\uB294
-    \n\uC774 \uACF5\uAC04\uC744 \uB458\uB7EC\uBCF4\uBA74\uC11C, 33\uAC1C \uC911 \n\uB9C8\uC74C\uC774
-    \uC774\uB044\uB294 <b>3\uAC1C\uC758 \uC0C9\uB3D9 \uB3C4\uD615</b>\uC744\n<b>\uD558\uB098\uC529
-    \uD130\uCE58</b>\uD574\uC8FC\uC138\uC694."
+  m_Text: "As you look around this space \nwhere the elements of Faith, \nHope, and
+    Love flow, <b>touch the \n3 colored shapes</b> that lead your \nheart out of
+    33 <b>one by one</b>."
 --- !u!222 &271244509
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1392,7 +1391,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -167}
-  m_SizeDelta: {x: 700, y: 30}
+  m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317095950
 MonoBehaviour:
@@ -1416,7 +1415,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0b8445cbfd3610e4a804a477ac5d4011, type: 3}
-    m_FontSize: 30
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1427,7 +1426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBC14\uB2E5\uC758 <b>\uC0C9\uB3D9\uC0C8</b>\uB97C \uC778\uC2DD\uD574\uC8FC\uC138\uC694."
+  m_Text: Scan the colored bird on the floor.
 --- !u!222 &317095951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2106,7 +2105,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC2DC\uC791\uD558\uAE30"
+  m_Text: Start
 --- !u!222 &463072747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7258,7 +7257,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &520464046
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7639,7 +7638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -16.701315, y: -187.24408}
+  m_AnchoredPosition: {x: -16.701315, y: -224.24402}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634211630
@@ -7675,7 +7674,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\uC5FC\uC6D0\uC744 \uBE4C\uBA74\uC11C\n\uC694\uC220\uBD09\uC744 \uD130\uCE58\uD558\uC138\uC694."
+  m_Text: 'Touch the wand and
+
+    make a wish.'
 --- !u!222 &634211631
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7737,7 +7738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -166.00006}
+  m_AnchoredPosition: {x: 0, y: -170.99994}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649566862
@@ -7762,10 +7763,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b5e843a94af5f744ebd2f05a724d16b2, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -7773,7 +7774,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC0AC\uB791\uC774 \uC774\uB044\uB294 \uB3C4\uD615\uC744 \uD130\uCE58\uD558\uC138\uC694."
+  m_Text: Touch the shape that Love leads.
 --- !u!222 &649566863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8303,7 +8304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &793372394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8604,7 +8605,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8719,7 +8720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -166}
+  m_AnchoredPosition: {x: 0, y: -171}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811266207
@@ -8744,10 +8745,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b5e843a94af5f744ebd2f05a724d16b2, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -8755,7 +8756,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC18C\uB9DD\uC774 \uC774\uB044\uB294 \uB3C4\uD615\uC744 \uD130\uCE58\uD558\uC138\uC694."
+  m_Text: Touch the shape that Hope leads.
 --- !u!222 &811266208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9230,7 +9231,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -220}
-  m_SizeDelta: {x: 600, y: 500}
+  m_SizeDelta: {x: 700, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &920325609
 MonoBehaviour:
@@ -9254,10 +9255,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -9265,9 +9266,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "3\uAC1C\uC758 \uC6D0\uC18C\uB97C \uC5F0\uACB0\uD558\uC5EC\n<b>\uB2F9\uC2E0\uC758
-    \uC5FC\uC6D0</b>\uC774 \uBAA8\uC600\uC2B5\uB2C8\uB2E4.\n<b>\uC0C9\uB3D9 \uC694\uC220\uB098\uB77C</b>\uB85C
-    \uBCF4\uB0B4\uBD05\uC2DC\uB2E4."
+  m_Text: 'Three elements are connected and
+
+    so is your wish. Let''s send it
+
+    to
+    Saekdong Magic Land.'
 --- !u!222 &920325610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9507,14 +9511,14 @@ RectTransform:
   m_GameObject: {fileID: 969935440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 2, z: 1}
+  m_LocalScale: {x: 6.8, y: 2.2, z: 1}
   m_Children: []
   m_Father: {fileID: 500211802}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -193}
+  m_AnchoredPosition: {x: 0, y: -199}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &969935442
@@ -10080,7 +10084,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0b8445cbfd3610e4a804a477ac5d4011, type: 3}
-    m_FontSize: 40
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10091,7 +10095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC0C9\uB3D9 \uC694\uC220\uB098\uB77C\uB85C \uBCF4\uB0B4\uAE30"
+  m_Text: Send wish to Saekdong Magic Land
 --- !u!222 &1065394382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10165,7 +10169,7 @@ RectTransform:
   m_GameObject: {fileID: 1131004863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 6.8, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 112014046}
   m_RootOrder: 0
@@ -10547,14 +10551,14 @@ RectTransform:
   m_GameObject: {fileID: 1235709354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 6.8, y: 1.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1791357381}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -164.00006}
+  m_AnchoredPosition: {x: 0, y: -168.99994}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235709356
@@ -10778,7 +10782,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC778\uD130\uB137 \uC5F0\uACB0\uC744 \uD655\uC778\uD574\uC8FC\uC138\uC694."
+  m_Text: "Please check your \ninternet connection."
 --- !u!222 &1311028807
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11848,7 +11852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -16.701315, y: -187.24408}
+  m_AnchoredPosition: {x: -16.701315, y: -224.24402}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598145541
@@ -11884,8 +11888,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "<b>\uB9C8\uC9C0\uB9C9\uC73C\uB85C,</b> \uC5FC\uC6D0\uC744 \uBE4C\uBA74\uC11C\n\uC694\uC220\uBD09\uC744
-    \uD130\uCE58\uD558\uC138\uC694. "
+  m_Text: 'For the last time, touch
+
+    the wand and make a wish.'
 --- !u!222 &1598145542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13118,7 +13123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC644\uC131\uD558\uAE30"
+  m_Text: Complete
 --- !u!222 &1797525361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13254,7 +13259,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB418\uB3CC\uB9AC\uAE30"
+  m_Text: Delete
 --- !u!222 &1897129532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13493,14 +13498,14 @@ RectTransform:
   m_GameObject: {fileID: 1932398920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 4, z: 1}
+  m_LocalScale: {x: 6.8, y: 4.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1935113001}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -291}
+  m_AnchoredPosition: {x: 0, y: -296}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932398922
@@ -14494,7 +14499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -16.701315, y: -187.24408}
+  m_AnchoredPosition: {x: -16.701315, y: -224.24402}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074872264
@@ -14530,8 +14535,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "<b>\uD55C \uBC88 \uB354,</b> \uC5FC\uC6D0\uC744 \uBE4C\uBA74\uC11C\n\uC694\uC220\uBD09\uC744
-    \uD130\uCE58\uD558\uC138\uC694. "
+  m_Text: 'Again, touch the wand
+
+    and make a wish.'
 --- !u!222 &2074872265
 CanvasRenderer:
   m_ObjectHideFlags: 0

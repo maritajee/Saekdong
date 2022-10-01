@@ -20,7 +20,14 @@ public class CheckCamPermission : MonoBehaviour
                 break;
 
             case NativeCamera.Permission.Granted:
-                SceneManager.LoadScene(2);
+                if(SceneManager.GetActiveScene().name == "Saekdong_v01_2")
+                {
+                    SceneManager.LoadScene(2);
+                }
+                else
+                {
+                    SceneManager.LoadScene(7);
+                }
                 break;
 
             case NativeCamera.Permission.ShouldAsk:

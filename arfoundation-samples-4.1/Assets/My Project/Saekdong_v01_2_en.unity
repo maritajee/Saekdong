@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &35257289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1260c35e2e13b7d4db8dd0a1e356cab5, type: 3}
-    m_FontSize: 40
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -525,8 +525,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: <b>Touch the three shapes</b> that your wish leads one by one to complete
-    them. Your own <b>Saekdong magic wand</b> is born.
+  m_Text: "<b>Touch the three shapes</b> that \nyour wish leads one by one to \ncomplete
+    them. Your own \n<b>Saekdong magic wand</b> is born."
 --- !u!222 &155044688
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1638,7 +1638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC774\uACF3\uC744 \uB20C\uB7EC\n\uBA54\uC2DC\uC9C0\uB97C \uC791\uC131\uD558\uC138\uC694."
+  m_Text: "Touch here to \nwrite down the message."
 --- !u!222 &336436608
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2731,7 +2731,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &836534737
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2775,7 +2775,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 500}
+  m_SizeDelta: {x: 700, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &913045671
 MonoBehaviour:
@@ -3446,7 +3446,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167691397
 MonoBehaviour:
@@ -3481,9 +3481,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\uC5FC\uC6D0 \uC0C9\uB3D9\uC694\uC220\uBD09\uACFC \uD0D1\uC740\n<b>AR
-    \uC778\uC2DD</b>\uC744 \uC704\uD55C <b>\uCE74\uBA54\uB77C \uAD8C\uD55C</b>\uC744\n\uD544\uC694\uB85C
-    \uD569\uB2C8\uB2E4.\n\n\uC124\uC815\uC744 \uD655\uC778\uD574\uC8FC\uC138\uC694."
+  m_Text: 'Tower of Wishful Saekdong Magic Wands 2 requires <b>camera permission</b>
+    for <b>AR recognition</b>.
+
+
+    Please check your settings.'
 --- !u!222 &1167691398
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3562,7 +3564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC124\uC815\uC73C\uB85C \uC774\uB3D9"
+  m_Text: Go to Settings
 --- !u!222 &1169748607
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3805,7 +3807,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &1202800672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3906,6 +3908,7 @@ GameObject:
   - component: {fileID: 1212993661}
   - component: {fileID: 1212993660}
   - component: {fileID: 1212993659}
+  - component: {fileID: 1212993662}
   m_Layer: 5
   m_Name: Button_Korean
   m_TagString: Untagged
@@ -3976,31 +3979,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1212993660}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2073491445}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1658983403}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1212993660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4039,6 +4018,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212993657}
   m_CullTransparentMesh: 1
+--- !u!114 &1212993662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212993657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0790eaf1d03a48448a07bd05a32bfe16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
 --- !u!1 &1420451527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,8 +4268,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 1260c35e2e13b7d4db8dd0a1e356cab5, type: 3}
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4288,8 +4280,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: The 33 colored figures scattered in the space are composed of <b>Faith,
-    Hope, and Love</b> that have been with our imagination.
+  m_Text: "The 33 colored figures \nscattered in the space \nare composed of <b>Faith,
+    \nHope, and Love</b> that have \nbeen with our imagination."
 --- !u!222 &1493930806
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4689,7 +4681,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4698,18 +4690,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: v01_2_script, Assembly-CSharp
         m_MethodName: CamPermission
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2059412260}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5376,7 +5356,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &1727667964
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6093,7 +6073,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &1863944218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6172,7 +6152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C"
+  m_Text: Next
 --- !u!222 &1980225392
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6193,6 +6173,7 @@ GameObject:
   - component: {fileID: 2025919328}
   - component: {fileID: 2025919327}
   - component: {fileID: 2025919329}
+  - component: {fileID: 2025919330}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -6301,10 +6282,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2073491445}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2025919330}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6313,18 +6294,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1658983403}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+--- !u!114 &2025919330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025919325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0790eaf1d03a48448a07bd05a32bfe16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 5
 --- !u!1 &2059412260
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,7 +6325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2059412261
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6446,7 +6428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2073491446
 RectTransform:
   m_ObjectHideFlags: 0

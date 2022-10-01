@@ -16,7 +16,7 @@ public class CheckTotalPermission : MonoBehaviour
         StoragePermission();
         if(cam && stor)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(5);
         }
         else
         {

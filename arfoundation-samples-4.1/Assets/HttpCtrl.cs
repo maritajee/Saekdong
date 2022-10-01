@@ -15,7 +15,7 @@ public class HttpCtrl : MonoBehaviour
     public postStick postTestData;
     void Awake()
     {
-        if (SceneManager.GetActiveScene().name == "Saekdong_v01_5")
+        if (SceneManager.GetActiveScene().name == "Saekdong_v01_5" ^ SceneManager.GetActiveScene().name == "Saekdong_v01_5_en")
         {
             Download();
         }
@@ -31,7 +31,7 @@ public class HttpCtrl : MonoBehaviour
 
     public void BuildTower()
     {
-        float height = -15f;
+        float height = -20f;
         for (int i = 0; i < towerObjects.Count; i++)
         {
             Instantiate(towerObjects[i], new Vector3(0f, height, 15f), towerObjects[i].transform.rotation);
