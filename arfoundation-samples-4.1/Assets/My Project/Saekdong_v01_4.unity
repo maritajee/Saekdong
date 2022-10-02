@@ -2192,7 +2192,7 @@ RectTransform:
   m_Children:
   - {fileID: 1512911972}
   m_Father: {fileID: 1458635765}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -2365,6 +2365,7 @@ RectTransform:
   - {fileID: 614374781}
   - {fileID: 21222422}
   - {fileID: 1835986574}
+  - {fileID: 1468235146}
   - {fileID: 1446022917}
   m_Father: {fileID: 816217146}
   m_RootOrder: 0
@@ -2448,7 +2449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   next_btn: {fileID: 1446022916}
-  next_txt: {fileID: 1835986573}
+  next_txt1: {fileID: 1835986573}
+  next_txt2: {fileID: 1468235145}
 --- !u!114 &1458635770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,6 +2522,86 @@ MonoBehaviour:
   - 
   - 
   mobileMsgs: []
+--- !u!1 &1468235145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468235146}
+  - component: {fileID: 1468235148}
+  - component: {fileID: 1468235147}
+  m_Layer: 5
+  m_Name: Text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1468235146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468235145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1458635765}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -106}
+  m_SizeDelta: {x: 600, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1468235147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468235145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 1260c35e2e13b7d4db8dd0a1e356cab5, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.2
+  m_Text: "\uC6B0\uB9AC \uBAA8\uB450\uAC00 \uC313\uC544\uAC00\uB294\n<b>\uC0C9\uB3D9\uC18C\uC6D0\uD0D1</b>\uB3C4\n\uD568\uAED8
+    \uC990\uACA8 \uC8FC\uC138\uC694."
+--- !u!222 &1468235148
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468235145}
+  m_CullTransparentMesh: 1
 --- !u!1 &1512911971
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 17}
+  m_AnchoredPosition: {x: 0, y: 137}
   m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835986575
@@ -3510,9 +3592,7 @@ MonoBehaviour:
     m_LineSpacing: 1.2
   m_Text: "\uC774\uC81C <b>\uC2A4\uD06C\uB9B0</b>\uC5D0\uC11C \uD3BC\uCCD0\uC9C4\n\uC0C9\uB3D9
     \uB098\uB77C\uC758 \uD48D\uACBD \uC18D\uC5D0\uC11C,\n\uB2F9\uC2E0\uC758 <b>\uC694\uC220\uBD09\uC744
-    \uD655\uC778</b>\uD574\uBCF4\uC138\uC694.\n\n\uC6B0\uB9AC \uBAA8\uB450\uAC00
-    \uC313\uC544\uAC00\uB294\n<b>\uC0C9\uB3D9\uC18C\uC6D0\uD0D1</b>\uB3C4\n\uD568\uAED8
-    \uC990\uACA8 \uC8FC\uC138\uC694."
+    \uD655\uC778</b>\uD574\uBCF4\uC138\uC694."
 --- !u!222 &1835986576
 CanvasRenderer:
   m_ObjectHideFlags: 0
