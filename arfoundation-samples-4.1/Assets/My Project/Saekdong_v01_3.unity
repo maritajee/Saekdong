@@ -2402,7 +2402,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -8303,7 +8303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &793372394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14429,7 +14429,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
         type: 3}
+      propertyPath: cullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
+        type: 3}
       propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
+        type: 3}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
+        type: 3}
+      propertyPath: ShapeModule.enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1247597175668131522, guid: c66d06e179835a44fa0ff2142dd4eb9a,
