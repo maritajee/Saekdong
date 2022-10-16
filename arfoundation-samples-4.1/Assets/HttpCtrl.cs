@@ -31,10 +31,10 @@ public class HttpCtrl : MonoBehaviour
 
     public void BuildTower()
     {
-        float height = -20f;
+        float height = -12f;
         for (int i = 0; i < towerObjects.Count; i++)
         {
-            Instantiate(towerObjects[i], new Vector3(0f, height, 10f), towerObjects[i].transform.rotation);
+            Instantiate(towerObjects[i], new Vector3(0f, height, 15f), towerObjects[i].transform.rotation);
             height += towerObjects[i].transform.GetChild(1).gameObject.transform.localPosition.z;
         }
     }

@@ -1421,10 +1421,10 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 1
   m_CharacterValidation: 0
-  m_CharacterLimit: 0
+  m_CharacterLimit: 47
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -1558,7 +1558,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "<b>\uC5FC\uC6D0\uBA54\uC2DC\uC9C0</b>\uB97C \uC368\uC8FC\uC138\uC694."
 --- !u!222 &326084624
