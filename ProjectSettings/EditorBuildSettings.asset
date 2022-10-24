@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_1.unity
+    guid: 9d70a6cc0a9895c43b2922b9ea6fa1e9
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_2.unity
+    guid: 12fd73df5ed87d64fb1251dad48f2634
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_3.unity
+    guid: 00d69d4f5c3674b4da958ca2987b0760
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_4.unity
+    guid: 9899f0d551f4e4742b5953afee7c4458
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_5.unity
+    guid: d90e4264ab9516946bd1302fa3be14ae
+  - enabled: 1
+    path: Assets/My Project/SelectLanguage.unity
+    guid: 49e99839896aa2f46a175c8458ebac2a
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_2_en.unity
+    guid: 2d9d61894d4e073459d8fbbfc1108d7e
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_3_en.unity
+    guid: 8b26c9cb07ca7ae4eb2735b886e48b53
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_4_en.unity
+    guid: 27f4adc763906a1458e70feff1f7e6e1
+  - enabled: 1
+    path: Assets/My Project/Saekdong_v01_5_en.unity
+    guid: 776126f6b43dab9448df61d142588771
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 98c79e8cc22674a89a95a3a90e2b70cb,
+      type: 2}
+    com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: 2d5fb8e61571b4e3897f221189089fd6,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e2f869774b12e400996eb546603602e3,
+      type: 2}

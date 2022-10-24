@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ImageMarker
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5486439905340460975
+  m_GuidHigh: 2112112322857396157
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5572625385461902232
+      m_GuidHigh: 12816765799046333096
+    m_SerializedTextureGuid:
+      m_GuidLow: 15795367450680362686
+      m_GuidHigh: 4980427169542060155
+    m_Size: {x: 0.0054101124, y: 0.005}
+    m_SpecifySize: 1
+    m_Name: MagicBird
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5285259217412704383
+      m_GuidHigh: 13921298336390203559
+    m_SerializedTextureGuid:
+      m_GuidLow: 1996491313368458465
+      m_GuidHigh: 6358999515969972457
+    m_Size: {x: 1.0820224, y: 1}
+    m_SpecifySize: 1
+    m_Name: MagicBird1
+    m_Texture: {fileID: 2800000, guid: 8a7ae4e1f6451bb4e968454c5eb43f58, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4786104159224000329
+      m_GuidHigh: 4148522849420558772
+    m_SerializedTextureGuid:
+      m_GuidLow: 15844967179281012787
+      m_GuidHigh: 12608549405260429466
+    m_Size: {x: 0.8126984, y: 0.8}
+    m_SpecifySize: 1
+    m_Name: magicbird3_1
+    m_Texture: {fileID: 0}
