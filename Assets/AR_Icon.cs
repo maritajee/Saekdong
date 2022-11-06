@@ -14,7 +14,7 @@ public class AR_Icon : MonoBehaviour
 
     IEnumerator FadeImage(bool fadeAway)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         // fade from opaque to transparent
         if (fadeAway)
         {
